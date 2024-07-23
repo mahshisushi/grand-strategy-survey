@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Grand Strategy Games Survey</title>
+</head>
+<body>
+  <div class="title-and-desc">
+    <h1 id="title">Grand Strategy Games Survey</h1>
+  <p id="description">This is a survey form that aims to collect data about grand strategy games.</p>
+  </div>
+
+  <form id="survey-form">
+    <div class="gradient-border">
+    <fieldset id="first-fieldset">
+      <legend>Personal Information</legend> 
+      <label id="name-label" for="name">Your Name</label>
+      <input type="text" id="name" required placeholder="Enter your name">
+      <br>
+
+      <label for="email" id="email-label">Your Email</label>
+      <input type="email" id="email" required placeholder="Enter your email">
+      <br>
+
+      <label for="number" id="number-label">Your Age</label>
+      <input type="number" id="number" required min="9" max="120" placeholder="Age">
+      <br>
+
+      <div class="gender-div"><fieldset><legend>Gender</legend>
+      <label for="male">Male</label>
+      <input type="radio" id="male" required name="gender" value="male">
+      <label for="female">Female</label>
+      <input type="radio" id="female" required name="gender" value="female"></fieldset></div>
+      <br>
+    </fieldset></div>
+
+    <fieldset>
+      <legend>Gaming History</legend>
+
+      <label>At what age group did you start playing grand strategy games?</label>
+      <label class="age-class first-line first-first-label" for="age-group-0-9">0-9</label>
+      <input class="age-class first-line first-line-checkbox"  type="checkbox" id="age-group-0-9" name="age-group" value="0-9">
+      <label  class="age-class first-line second-first-label" for="age-group-9-13">9-13</label>
+      <input  class="age-class first-line first-line-checkbox" type="checkbox" id="age-group-9-13" name="age-group" value="9-13">
+      <label  class="age-class" for="age-group-13-17">13-17</label>
+      <input  class="age-class" type="checkbox" id="age-group-13-17" name="age-group" value="13-17">
+      <label  class="age-class" for="age-group-17+">17+</label>
+      <input  class="age-class" type="checkbox" id="age-group-17+" name="age-group" value="17+">
+      <br>
+
+      <label for="dropdown" >What is your favorite grand strategy game series?</label>
+      <div class="fav-game"><select id="dropdown">
+        <option value="">Choose an option</option>
+        <option value="Europa-Universalis">Europa Universalis</option>
+        <option value="Stellaris">Stellaris</option>
+        <option value="Victoria">Victoria</option>
+        <option value="Civilization">Civilization</option>
+        <option value="Crusader-Kings">Crusader Kings</option>
+        <option value="Total-War">Total War</option>
+        <option value="Field-of-Glory">Field of Glory</option>
+        <option value="Hearts-of-Iron">Hearts of Iron</option>
+        <option value="Age-of-Wonders">Age of Wonders</option>
+      </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback</legend>
+      <label for="improvement">What do you think should be improved in your favorite game?</label>
+      <textarea id="improvement" rows="5" cols="30" placeholder="Your thoughts go here..."></textarea>
+    </fieldset>
+
+    <div class="submit-div"><button id="submit">Submit Survey</button></div>
+  </form>
+</body>
+</html>
